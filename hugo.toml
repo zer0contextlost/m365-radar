@@ -1,0 +1,13 @@
+baseURL = "https://zer0contextlost.github.io/m365-radar/"
+languageCode = "en-us"
+title = "M365 Radar"
+
+[params]
+  description = "Microsoft 365 roadmap changes, translated into a read-only PowerShell check for your own tenant."
+  tagline = "Know if it hits your tenant before it ships."
+
+[taxonomies]
+  tag = "tags"
+
+[markup.goldmark.renderer]
+  unsafe = true
