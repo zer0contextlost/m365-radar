@@ -1,10 +1,16 @@
 {{ define "title" }}{{ .Title }} · {{ .Site.Title }}{{ end }}
 {{ define "main" }}
-<article class="post">
-  <h1>{{ .Title }}</h1>
-  <p class="meta">{{ .Date.Format "January 2, 2006" }}{{ if .Params.tags }} · {{ range .Params.tags }}<span class="tag">{{ . }}</span> {{ end }}{{ end }}</p>
-  <div class="content">
-    {{ .Content }}
+<article class="card post-full">
+  <div class="card-accent"></div>
+  <div class="card-body">
+    <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
+    <h1>{{ .Title }}</h1>
+    {{ if .Params.tags }}
+    <p class="tag-row">{{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</p>
+    {{ end }}
+    <div class="content">
+      {{ .Content }}
+    </div>
   </div>
 </article>
 {{ end }}

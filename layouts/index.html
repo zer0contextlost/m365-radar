@@ -1,14 +1,21 @@
 {{ define "main" }}
 <section class="intro">
+  <span class="eyebrow">Tenant Impact Feed</span>
   <h1>{{ .Site.Title }}</h1>
   <p>{{ .Site.Params.description }}</p>
 </section>
-<section class="post-list">
+<section class="card-grid">
   {{ range (where .Site.RegularPages "Type" "posts").ByDate.Reverse }}
-  <article class="post-summary">
-    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
-    <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
-    <p>{{ .Description }}</p>
+  <article class="card post-card">
+    <div class="card-accent"></div>
+    <div class="card-body">
+      <p class="meta">{{ .Date.Format "January 2, 2006" }}</p>
+      <h2 class="card-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+      <p class="card-desc">{{ .Description }}</p>
+      {{ if .Params.tags }}
+      <p class="tag-row">{{ range .Params.tags }}<span class="tag">{{ . }}</span>{{ end }}</p>
+      {{ end }}
+    </div>
   </article>
   {{ end }}
 </section>

@@ -1,6 +1,9 @@
 <header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="{{ "/" | relURL }}">{{ .Site.Title }}</a>
+  <div class="wrap header-row">
+    <a class="brand" href="{{ "/" | relURL }}">
+      <span class="brand-mark" aria-hidden="true"><span class="brand-mark-dot"></span></span>
+      <span class="brand-text">{{ .Site.Title }}</span>
+    </a>
     <span class="tagline">{{ .Site.Params.tagline }}</span>
     <nav class="nav"><a href="{{ "/about/" | relURL }}">About</a></nav>
   </div>
