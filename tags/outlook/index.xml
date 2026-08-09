@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Outlook on M365 Radar</title><link>https://m365radar.zer0contextlost.net/tags/outlook/</link><description>Recent content in Outlook on M365 Radar</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Sat, 08 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://m365radar.zer0contextlost.net/tags/outlook/index.xml" rel="self" type="application/rss+xml"/><item><title>Roadmap 569022: Purview Label Inheritance from Email Attachments — Does It Touch You?</title><link>https://m365radar.zer0contextlost.net/posts/purview-label-inheritance-from-email-attachments/</link><pubDate>Sat, 08 Aug 2026 00:00:00 +0000</pubDate><guid>https://m365radar.zer0contextlost.net/posts/purview-label-inheritance-from-email-attachments/</guid><description>&lt;p&gt;&lt;strong&gt;Roadmap ID:&lt;/strong&gt; &lt;a href="https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&amp;amp;searchterms=569022"&gt;569022&lt;/a&gt;
+&lt;strong&gt;Status:&lt;/strong&gt; In development
+&lt;strong&gt;Product:&lt;/strong&gt; Outlook — Worldwide (Standard Multi-Tenant), GCC, GCC High, DoD
+&lt;strong&gt;Rollout:&lt;/strong&gt; General availability expected September 2026&lt;/p&gt;
+&lt;h2 id="whats-changing"&gt;What&amp;rsquo;s changing&lt;/h2&gt;
+&lt;p&gt;Per Microsoft&amp;rsquo;s roadmap entry, Outlook will automatically apply or
+recommend a sensitivity label on an email based on the classification of
+files attached to it — the label follows the attachment, not just whatever
+the compose window already had set. The initial description centers on
+Mac, with iOS/Android inheritance tracked as a related, separately-numbered
+item (569021).&lt;/p&gt;</description></item></channel></rss>
